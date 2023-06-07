@@ -1,0 +1,7 @@
+[package]
+description = "Cut down on trivial `impl From<A> for B` boilerplate code"
+edition = "2021"
+license = "MIT"
+name = "easy-conv"
+repository = "https://github.com/cyqsimon/easy-conv"
+version = "0.1.0"
