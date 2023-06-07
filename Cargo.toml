@@ -1,6 +1,9 @@
 [package]
+authors = ["cyqsimon <28627918+cyqsimon@users.noreply.github.com>"]
+categories = ["rust-patterns"]
 description = "Cut down on trivial `impl From<A> for B` boilerplate code"
 edition = "2021"
+keywords = ["conversion", "macro", "types"]
 license = "MIT"
 name = "easy-conv"
 repository = "https://github.com/cyqsimon/easy-conv"
