@@ -7,4 +7,4 @@ keywords = ["conversion", "macro", "types"]
 license = "MIT"
 name = "easy-conv"
 repository = "https://github.com/cyqsimon/easy-conv"
-version = "0.1.0"
+version = "0.1.1"

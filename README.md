@@ -1,6 +1,8 @@
 # easy-conv
 
-Cut down on trivial `impl From<A> for B` boilerplate code
+Cut down on trivial `impl From<A> for B` boilerplate code.
+
+[crates.io](https://crates.io/crates/easy-conv)
 
 ## Quick start
 
@@ -45,7 +47,7 @@ newtype_wrap!(Choices, Charlie, TypeC);
 Better? I certainly think so.
 
 There are also `newtype_wrap_from_any` and `chained_into` macros, which each does
-their quirky little thing. See documentation.
+their quirky little thing. See [documentation](https://docs.rs/easy-conv/latest/).
 
 ## Contributing
 
