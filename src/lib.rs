@@ -72,9 +72,9 @@ macro_rules! newtype_wrap_from_any {
 #[macro_export]
 macro_rules! chained_into {
     ($source: ty, $($tail: ty),+) => {
-        chained_into!(@impl $source | $($tail),+ | chained_into!(@get_target $($tail),+));
+        chained_into!(@impl $source, chained_into!(@get_target $($tail),+), $($tail),+);
     };
-    (@impl $source: ty | $($intermediate: ty),* | $target: ty) => {
+    (@impl $source: ty, $target: ty, $($intermediate: ty),*) => {
         impl From<$source> for $target {
             fn from(val: $source) -> $target {
                 chained_into!(@next val, $($intermediate),*)
