@@ -1,3 +1,5 @@
+//! Cut down on trivial `impl From<A> for B` boilerplate code.
+
 /// Implement conversion from `T` to its newtype wrapper.
 ///
 /// Also works on types that convert to `T` via `into()`.
